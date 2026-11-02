@@ -1,0 +1,22 @@
+# raw corpora and aligner outputs (large, separately licensed; not distributed)
+data/
+*.wav
+*.WAV
+*.TextGrid
+
+# intermediate files rebuilt by extract_reduction_feature.py and f0_range_robust.py
+# (reduction_realign_per_utt.csv is kept: run_analyses.sh reads it, Appendix B.15)
+outputs/reduction_*_per_utt.csv
+!outputs/reduction_realign_per_utt.csv
+outputs/f0_range_robust_parts/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# operating system
+.DS_Store
+Thumbs.db
