@@ -1,0 +1,13 @@
+# Python 3.11. Install with:  pip install -r requirements.txt
+# These are the versions used for every number in the thesis. Random Forest results depend on the
+# scikit-learn version, so keep it pinned.
+# Montreal Forced Aligner is not listed here: it runs in its own conda environment and is needed only
+# to rebuild the TextGrids (Stage A, see run_extraction.sh).
+
+numpy==2.4.4
+scipy==1.17.1
+scikit-learn==1.8.0
+shap==0.51.0
+matplotlib==3.10.9
+praat-parselmouth==0.4.7   # Stage A and Stage E only
+textgrid>=1.5              # Stage A only
