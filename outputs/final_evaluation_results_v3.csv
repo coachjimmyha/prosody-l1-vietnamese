@@ -1,0 +1,10 @@
+metric,value
+speechocean_test_pcc,0.6562
+cross_l1_gap,0.1011
+cross_l1_cohens_d,0.4564
+cross_l1_p_value,5.429400383248611e-46
+direct_mean_duration_ratio_cohens_d,0.0339
+direct_speaking_rate_cohens_d,1.058
+direct_npvi_cohens_d,-0.1485
+direct_percent_v_cohens_d,-0.2268
+direct_varcov_cohens_d,-0.0872

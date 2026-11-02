@@ -1,0 +1,28 @@
+
+===== ACCENT DENSITY (syll/accent; lower=denser) =====
+  native      mean=1.877  speakers=[np.float64(2.0), np.float64(2.23), np.float64(1.71), np.float64(1.56)]
+  Vietnamese  mean=1.528  speakers=[np.float64(1.54), np.float64(1.43), np.float64(1.55), np.float64(1.59)]
+  Korean      mean=2.194  speakers=[np.float64(2.01), np.float64(2.48), np.float64(1.82), np.float64(2.47)]
+  Spanish     mean=1.511  speakers=[np.float64(1.48), np.float64(1.88), np.float64(1.3), np.float64(1.38)]
+  Chinese     mean=1.582  speakers=[np.float64(1.52), np.float64(1.69), np.float64(1.73), np.float64(1.38)]
+  native vs Vietnamese  d=+1.60
+  native vs Korean      d=-1.00
+  native vs Spanish     d=+1.31
+  native vs Chinese     d=+1.22
+  native vs POOLED-L2  d=+0.50  boot95%CI=[-0.36,+2.02] crosses0
+  tonal(VN+Chi) vs non-tonal(Kor+Spa)  d=-0.89
+
+===== VOWEL CENTRALIZATION (func/stress dist; lower=more centralised) =====
+  native      mean=0.837  speakers=[np.float64(0.77), np.float64(0.88), np.float64(0.79), np.float64(0.91)]
+  Vietnamese  mean=0.942  speakers=[np.float64(0.82), np.float64(0.88), np.float64(0.94), np.float64(1.14)]
+  Korean      mean=0.850  speakers=[np.float64(0.78), np.float64(0.76), np.float64(0.89), np.float64(0.97)]
+  Spanish     mean=0.956  speakers=[np.float64(1.06), np.float64(0.95), np.float64(0.93), np.float64(0.88)]
+  Chinese     mean=0.990  speakers=[np.float64(0.97), np.float64(0.99), np.float64(1.09), np.float64(0.91)]
+  native vs Vietnamese  d=-0.96
+  native vs Korean      d=-0.16
+  native vs Spanish     d=-1.66
+  native vs Chinese     d=-2.24
+  native vs POOLED-L2  d=-0.98  boot95%CI=[-1.97,-0.26] no cross0
+  tonal(VN+Chi) vs non-tonal(Kor+Spa)  d=+0.61
+
+5 groups x 4 speakers, 12 matched ARCTIC sentences. Proxy. EXPLORATORY.

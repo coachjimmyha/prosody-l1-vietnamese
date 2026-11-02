@@ -1,0 +1,28 @@
+Training: 2556 Speechocean762 utterances | native 726 utts (4 spk) | VN 4077 utts (4 spk)
+REAL model: utterance d = +0.367 | speaker d = +1.674
+  50/1000 fake models done
+  100/1000 fake models done
+  150/1000 fake models done
+  200/1000 fake models done
+  250/1000 fake models done
+  300/1000 fake models done
+  350/1000 fake models done
+  400/1000 fake models done
+  450/1000 fake models done
+  500/1000 fake models done
+  550/1000 fake models done
+  600/1000 fake models done
+  650/1000 fake models done
+  700/1000 fake models done
+  750/1000 fake models done
+  800/1000 fake models done
+  850/1000 fake models done
+  900/1000 fake models done
+  950/1000 fake models done
+  1000/1000 fake models done
+========================================================================
+N = 1000 fake models (shuffled Speechocean762 labels), seed 42
+Utterance level: real |d| = 0.367; fake |d| mean 0.321, max 1.081; k = 355; empirical p = 0.356
+Speaker level  : real |d| = 1.674; fake |d| mean 1.458, max 6.959; k = 380; empirical p = 0.381
+Verdict: INCONCLUSIVE - fake models separate the groups as much as the real model
+Saved: outputs/transfer_fake_null_1000.csv

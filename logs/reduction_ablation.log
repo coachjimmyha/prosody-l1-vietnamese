@@ -1,0 +1,6 @@
+coverage: 2393/2556 = 93.6% of training utts have a reduction value
+reduction <-> prosody score:  r = -0.305  (p = 3.7e-56)   [observed-only r = -0.262]
+ablation single-split PCC:  14-feat +0.657  vs  15 (+reduction) +0.639
+speaker-disjoint 5-fold CV R2:  14 0.425 -> 15 0.437  (delta +0.012)
+speaker-disjoint 5-fold CV PCC: 14 0.658 -> 15 0.667  (delta +0.008)
+VERDICT: net gain ~ 0 -> keep 14 features; reduction is diagnostic, not a model input.

@@ -1,0 +1,19 @@
+=== speaker-level group means (n=4 each) ===
+  Native       0.678   [0.645, 0.632, 0.667, 0.769]
+  Korean       0.844   [0.861, 0.762, 0.893, 0.859]
+  Spanish      0.890   [1.093, 0.846, 0.839, 0.783]
+  Vietnamese   0.932   [0.916, 0.879, 0.885, 1.047]
+  Chinese      0.953   [0.979, 1.029, 0.998, 0.807]
+
+=== effect sizes (speaker-level) ===
+  native-vs-VN         d = -3.579   MWU p = 0.0286   boot 95% CI [-19.34, -2.79]  no cross 0
+  native-vs-VN         exact permutation p = 0.029  (70 relabellings; minimum attainable 0.029)
+  native-vs-pooledL2   d = -2.443   MWU p = 0.0008   boot 95% CI [-3.71, -1.72]  no cross 0
+
+  reduction <-> speaking rate:  r = -0.679  p = 0.0010  (n=20 speakers)
+
+=== per-VN-speaker reduction z (vs native mean 0.678, SD 0.062) ===
+  HQTV     reduction=0.916  z=+3.82
+  PNV      reduction=0.879  z=+3.23
+  THV      reduction=0.885  z=+3.32
+  TLV      reduction=1.047  z=+5.93

@@ -1,0 +1,15 @@
+feature,importance_mean_r2_drop,importance_std
+speaking_rate,0.56972,0.04704
+varcov,0.10107,0.02066
+percent_v,0.04311,0.01306
+silence_proportion,0.02047,0.00604
+mean_f0_ratio,0.01032,0.00456
+npvi,0.00873,0.00301
+std_duration_ratio,0.00821,0.00598
+f0_range_hz,0.0064,0.00266
+mean_duration_ratio,0.00255,0.00186
+std_intensity_diff,0.00199,0.00116
+n_multisyllabic_words,0.00149,0.00128
+mean_intensity_diff,0.00132,0.00174
+std_f0_ratio,0.00052,0.00061
+max_duration_ratio,0.00017,0.00156

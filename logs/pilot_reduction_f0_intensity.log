@@ -1,0 +1,19 @@
+spk   grp       F0 ratio  Int diff dB  utts
+-------------------------------------------
+bdl   native       0.971        -2.22    12
+slt   native       1.020        -2.69    12
+clb   native       1.034        -0.50    12
+rms   native       0.971        -1.44    12
+HQTV  VN           0.989        -1.51    12
+PNV   VN           1.035        -2.46    12
+THV   VN           1.034        -2.43    12
+TLV   VN           1.064        -1.88    12
+-------------------------------------------
+
+F0 ratio (func/stress): native=+0.999  VN=+1.031  d=-0.99  (lower=func pitch lower=more reduced)
+   bootstrap 95% CI d=[-3.29,+0.29] crosses 0
+
+Intensity diff dB (func-stress): native=-1.713  VN=-2.069  d=+0.47  (more negative=func weaker=more reduced)
+   bootstrap 95% CI d=[-1.43,+2.84] crosses 0
+
+Proxy pilot, 12 matched utts/spk (set NUTT to change), 4+4 speakers. EXPLORATORY.

@@ -1,0 +1,11 @@
+Spearman correlations among the 14 features (n = 2556 utterances)
+Pairs with |rho| >= 0.5:
+  std_intensity_diff     n_multisyllabic_words  rho = +0.97
+  std_f0_ratio           n_multisyllabic_words  rho = +0.97
+  std_duration_ratio     n_multisyllabic_words  rho = +0.97
+  std_f0_ratio           std_intensity_diff     rho = +0.97
+  mean_duration_ratio    max_duration_ratio     rho = +0.96
+  std_duration_ratio     std_intensity_diff     rho = +0.96
+  std_duration_ratio     std_f0_ratio           rho = +0.95
+  npvi                   varcov                 rho = +0.75
+-> saved outputs/feature_correlations.csv

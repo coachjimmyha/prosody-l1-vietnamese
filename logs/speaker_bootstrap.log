@@ -1,0 +1,19 @@
+==============================================================================================
+SPEAKER-LEVEL BOOTSTRAP  (5000 resamples of whole speakers, n=4 per group)
+==============================================================================================
+feature           point d  boot mean     95% CI (speaker-level)   crosses 0?  exact p
+----------------------------------------------------------------------------------------------
+speaking_rate      +1.534     +1.926   [+0.888, +4.473]                 no    0.057
+f0_range_st        -0.480     -0.290   [-2.815, +1.347]         YES (n.s.)    0.543
+silence_prop       -1.006     -1.344   [-3.645, +0.240]         YES (n.s.)    0.229
+duration_ratio     +1.127     +1.711   [-0.044, +3.050]         YES (n.s.)    0.171
+nPVI               -0.800     -1.233   [-3.393, +0.479]         YES (n.s.)    0.343
+percent_V          -0.044     -0.266   [-2.770, +1.600]         YES (n.s.)    0.943
+VarcoV             -0.553     -0.605   [-2.192, +1.092]         YES (n.s.)    0.543
+f0_range_OLD       -2.183     -3.188   [-6.357, -1.635]                 no    0.029
+-> saved outputs/speaker_level_tests.csv
+
+Notes:
+- The bootstrap resamples whole speakers (n = 4 per group), so the intervals are wide.
+- With n = 4 per group the percentile bootstrap is optimistic; the exact permutation p is
+  the test reported in the thesis (smallest attainable two-sided p = 2/70 = 0.029).

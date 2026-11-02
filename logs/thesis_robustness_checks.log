@@ -1,0 +1,60 @@
+split: train 1789 / val 383 / test 384
+========================================================================
+1. SHUFFLE-LABEL NULL
+========================================================================
+  real test PCC = +0.656   null mean = +0.036 (SD 0.088)
+  real PCC is 7.0 SD above the null mean
+
+========================================================================
+2. ABLATION (same split, same RF settings)
+========================================================================
+  nested (order: stress -> utterance -> rhythm)
+    stress only (8)            test PCC = +0.136
+    + utterance-level (11)     test PCC = +0.562
+    + rhythm = full (14)       test PCC = +0.656
+  leave-one-group-out / single group
+    drop stress     ( 6 feats)  PCC = +0.651    only stress     PCC = +0.136
+    drop utterance  (11 feats)  PCC = +0.463    only utterance  PCC = +0.529
+    drop rhythm     (11 feats)  PCC = +0.562    only rhythm     PCC = +0.457
+  baselines
+    speaking_rate raw value vs score        PCC = +0.501
+    RF on speaking_rate only                PCC = +0.503
+    linear regression, 14 features          PCC = +0.596
+    RF without speaking_rate (13 feats)     PCC = +0.557
+
+========================================================================
+3. PERMUTATION IMPORTANCE (unbiased, held-out test)
+========================================================================
+  speaking_rate          +0.5697 ± 0.0470
+  varcov                 +0.1011 ± 0.0207
+  percent_v              +0.0431 ± 0.0131
+  silence_proportion     +0.0205 ± 0.0060
+  mean_f0_ratio          +0.0103 ± 0.0046
+  npvi                   +0.0087 ± 0.0030
+  std_duration_ratio     +0.0082 ± 0.0060
+  f0_range_hz            +0.0064 ± 0.0027
+  mean_duration_ratio    +0.0025 ± 0.0019
+  std_intensity_diff     +0.0020 ± 0.0012
+  n_multisyllabic_words  +0.0015 ± 0.0013
+  mean_intensity_diff    +0.0013 ± 0.0017
+  std_f0_ratio           +0.0005 ± 0.0006
+  max_duration_ratio     +0.0002 ± 0.0016
+  -> saved outputs/permutation_importance_v3.csv
+  (NB: final_feature_importance_v3_eval.csv is impurity/MDI importance, NOT permutation importance)
+
+========================================================================
+4. BOOTSTRAP 95% CI on test PCC
+========================================================================
+  test PCC = +0.656   95% CI [+0.582, +0.720]
+
+========================================================================
+5. SPEAKER-LEVEL CROSS-L1 on PREDICTED SCORE
+========================================================================
+  native predicted-score mean 8.324 vs VN 8.248 (gap +0.076)
+  d utterance-level = +0.367 (pseudoreplicated)
+  d speaker-level   = +1.674   95% CI [+0.784, +5.123]  (clears 0)
+  NOTE: this bootstrap resamples 4 speaker means and ignores model randomness; it is NOT the
+  inferential test for RQ2. The canonical test is the 1000-run fake-model null in
+  transfer_reality_check_v2.py (p ~ 0.38 -> inconclusive); content-matched check: rq2_matched_content.py.
+
+Done.

@@ -1,0 +1,6 @@
+saved figures/Figure_4.1_eda.png
+speaking_rate medians SO/NAT/VN [2.22, 4.03, 3.34]
+silence_proportion medians SO/NAT/VN [0.34, 0.09, 0.13]
+native faster than 95% of training: 0.933 VN: 0.637
+native silence below training minimum: 0.762 VN: 0.485
+one multisyllabic word: SO/NAT/VN [0.7, 0.264, 0.292]

@@ -1,0 +1,39 @@
+Function-word reduction ratio of the Vietnamese speakers:
+corpus TextGrids (MFA 1.0.0) vs re-aligned with the native set-up (MFA 3.3.9)
+
+(A) arctic_a0001-a0300 (main analysis recordings)
+  speaker     n  corpus     MFA   paired diff (MFA-corpus)
+  HQTV      299   0.916   0.813   mean -0.103 (SD 0.260)
+  PNV       299   0.879   0.801   mean -0.078 (SD 0.168)
+  THV       299   0.885   0.804   mean -0.082 (SD 0.316)
+  TLV       299   1.047   0.918   mean -0.130 (SD 0.240)
+
+(A) speaker level, native reference = reduction_full.csv
+  native: mean 0.678, SD 0.062  [0.645, 0.632, 0.667, 0.769]
+  corpus TextGrids (main analysis)
+    Vietnamese [0.916, 0.879, 0.885, 1.047]  mean 0.932
+    d (native - VN) = -3.579   exact p = 0.029   boot 95% CI [-19.34, -2.79]
+    z vs native: HQTV +3.82  PNV +3.23  THV +3.32  TLV +5.93
+    every Vietnamese speaker above every native speaker: True   (lowest VN 0.879, highest native 0.769)
+  re-aligned with MFA 3.3.9
+    Vietnamese [0.813, 0.801, 0.804, 0.918]  mean 0.834
+    d (native - VN) = -2.627   exact p = 0.029   boot 95% CI [-18.56, -1.64]
+    z vs native: HQTV +2.17  PNV +1.97  THV +2.02  TLV +3.85
+    every Vietnamese speaker above every native speaker: True   (lowest VN 0.801, highest native 0.769)
+  share of the native-Vietnamese gap removed by re-alignment: 39%
+
+(B) all 1124 prompts shared by the eight speakers
+  native: mean 0.674, SD 0.077  [0.625, 0.62, 0.664, 0.785]
+  corpus TextGrids
+    Vietnamese [0.886, 0.864, 0.847, 1.038]  mean 0.909
+    d (native - VN) = -2.854   exact p = 0.029   boot 95% CI [-15.03, -2.05]
+    z vs native: HQTV +2.76  PNV +2.48  THV +2.26  TLV +4.74
+    every Vietnamese speaker above every native speaker: True   (lowest VN 0.847, highest native 0.785)
+  re-aligned with MFA 3.3.9
+    Vietnamese [0.79, 0.795, 0.789, 0.92]  mean 0.824
+    d (native - VN) = -2.115   exact p = 0.029   boot 95% CI [-11.32, -1.08]
+    z vs native: HQTV +1.52  PNV +1.58  THV +1.50  TLV +3.21
+    every Vietnamese speaker above every native speaker: True   (lowest VN 0.789, highest native 0.785)
+  share of the native-Vietnamese gap removed by re-alignment: 36%
+
+-> saved outputs/reduction_realign_check.csv

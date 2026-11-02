@@ -1,0 +1,5 @@
+speaker,a300_corpus_tg,a300_mfa_tg,allprompts_corpus_tg,allprompts_mfa_tg
+HQTV,0.916,0.813,0.886,0.79
+PNV,0.879,0.801,0.864,0.795
+THV,0.885,0.804,0.847,0.789
+TLV,1.047,0.918,1.038,0.92

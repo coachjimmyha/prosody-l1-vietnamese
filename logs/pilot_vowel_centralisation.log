@@ -1,0 +1,16 @@
+spk   grp        centralization ratio (func/stress dist)
+--------------------------------------------------------
+bdl   native                                       0.842
+slt   native                                       0.834
+clb   native                                       0.776
+rms   native                                       1.002
+HQTV  VN                                           0.966
+PNV   VN                                           0.915
+THV   VN                                           0.991
+TLV   VN                                           1.158
+--------------------------------------------------------
+native mean=0.864  VN mean=1.008  d=-1.42
+(<1 = function vowels closer to centre = more reduced/centralised; native expected LOWER)
+bootstrap 95% CI d=[-5.36,-0.29] no cross 0
+
+Proxy (Burg formants, Lobanov-normalised), 24 matched utts/spk (set NUTT to change), 4+4 speakers. EXPLORATORY, formants noisy.

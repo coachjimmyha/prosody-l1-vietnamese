@@ -1,0 +1,9 @@
+n=2556 utterances, 250 speakers (prefix-5)
+--------------------------------------------------------------------
+[A] utterance-level split (train 85%):  test PCC = +0.657
+[B] speaker-disjoint split:             test PCC = +0.695   (train/test speaker overlap = 0)
+[C] speaker-disjoint 5-fold CV:         PCC = +0.658 +/- 0.038   folds = [0.641, 0.655, 0.598, 0.704, 0.694]
+[D] shuffle-null (speaker-disjoint):    test PCC = +0.009   (~0 -> signal is real)
+--------------------------------------------------------------------
+Verdict: no sizeable inflation from speaker leakage; the PCC holds under a speaker-disjoint
+split and speaker-disjoint 5-fold CV. The n=4 small-sample limit is on the cross-L1 side, not the scoring model.

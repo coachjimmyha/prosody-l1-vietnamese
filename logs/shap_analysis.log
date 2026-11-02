@@ -1,0 +1,13 @@
+Trained on 2556; VN utts 4077
+model base value (mean prosody score) = 7.611
+saved figures/supplementary/SHAP_global_beeswarm.png
+saved figures/supplementary/SHAP_learner_profiles.png
+
+LOCAL EXAMPLE — VN utt idx 4000, speaker TLV, predicted score 6.41 (base 7.61)
+  Speaking rate            value=    1.78  SHAP=-0.652
+  VarcoV (rhythm)          value=   72.92  SHAP=-0.500
+  Duration ratio SD        value=    0.35  SHAP=-0.117
+  Silence proportion       value=    0.43  SHAP=+0.116
+  nPVI (rhythm)            value=   66.09  SHAP=+0.100
+  Intensity diff SD        value=    4.10  SHAP=-0.056
+saved figures/supplementary/SHAP_local_example.png

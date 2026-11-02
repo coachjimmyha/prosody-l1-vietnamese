@@ -1,0 +1,52 @@
+========================================================================================
+ALL prompts  |  OLD  max − min (Hz), 75–600 Hz
+========================================================================================
+  Native      mean   165.64   bdl(M) 181.45  clb(F) 134.23  rms(M) 200.80  slt(F) 146.07
+  Vietnamese  mean   300.29   HQTV(M) 246.12  PNV(F) 278.65  THV(F) 274.20  TLV(M) 402.19
+  Korean      mean   280.78   HJK(F) 275.38  HKK(M) 240.86  YDCK(F) 377.32  YKWK(M) 229.58
+  Spanish     mean   376.66   EBVS(M) 438.68  ERMS(M) 297.92  MBMPS(F) 394.47  NJS(F) 375.57
+  Chinese     mean   372.46   BWC(M) 379.44  LXC(F) 445.13  NCC(F) 406.68  TXHC(M) 258.60
+  native vs VN        d = -2.51   exact p = 0.029   boot 95% CI [-9.46, -2.06]
+  native vs pooled L2 d = -2.87
+  tonal vs non-tonal  d = +0.10   (336.38 vs 328.72)   exact p = 0.823
+  VN z vs native:     HQTV +2.61  PNV +3.66  THV +3.52  TLV +7.67
+
+========================================================================================
+ALL prompts  |  NEW  p5–p95 (semitones), sex-specific range
+========================================================================================
+  Native      mean     6.78   bdl(M) 8.02  clb(F) 5.89  rms(M) 8.04  slt(F) 5.19
+  Vietnamese  mean     7.42   HQTV(M) 6.42  PNV(F) 8.83  THV(F) 7.93  TLV(M) 6.49
+  Korean      mean     8.29   HJK(F) 9.75  HKK(M) 8.66  YDCK(F) 8.17  YKWK(M) 6.58
+  Spanish     mean     8.32   EBVS(M) 9.10  ERMS(M) 6.38  MBMPS(F) 9.18  NJS(F) 8.60
+  Chinese     mean     6.61   BWC(M) 5.16  LXC(F) 7.12  NCC(F) 5.21  TXHC(M) 8.94
+  native vs VN        d = -0.48   exact p = 0.543   boot 95% CI [-2.67, +1.33]
+  native vs pooled L2 d = -0.60
+  tonal vs non-tonal  d = -0.95   (7.01 vs 8.30)   exact p = 0.078
+  VN z vs native:     HQTV -0.24  PNV +1.40  THV +0.78  TLV -0.20
+
+========================================================================================
+MATCHED prompts (n = 1006 per speaker)  |  OLD  max − min (Hz), 75–600 Hz
+========================================================================================
+  Native      mean   164.56   bdl(M) 182.12  clb(F) 132.65  rms(M) 197.53  slt(F) 145.92
+  Vietnamese  mean   296.02   HQTV(M) 238.25  PNV(F) 273.94  THV(F) 271.27  TLV(M) 400.61
+  Korean      mean   279.28   HJK(F) 272.89  HKK(M) 236.30  YDCK(F) 375.28  YKWK(M) 232.65
+  Spanish     mean   376.69   EBVS(M) 438.62  ERMS(M) 294.55  MBMPS(F) 391.77  NJS(F) 381.82
+  Chinese     mean   371.44   BWC(M) 383.25  LXC(F) 445.94  NCC(F) 403.20  TXHC(M) 253.36
+  native vs VN        d = -2.39   exact p = 0.029   boot 95% CI [-8.07, -1.94]
+  native vs pooled L2 d = -2.82
+  tonal vs non-tonal  d = +0.07   (333.73 vs 327.98)   exact p = 0.864
+  VN z vs native:     HQTV +2.43  PNV +3.61  THV +3.52  TLV +7.78
+
+========================================================================================
+MATCHED prompts (n = 1006 per speaker)  |  NEW  p5–p95 (semitones), sex-specific range
+========================================================================================
+  Native      mean     6.80   bdl(M) 8.01  clb(F) 5.92  rms(M) 8.07  slt(F) 5.20
+  Vietnamese  mean     7.44   HQTV(M) 6.48  PNV(F) 8.83  THV(F) 7.95  TLV(M) 6.49
+  Korean      mean     8.29   HJK(F) 9.78  HKK(M) 8.61  YDCK(F) 8.17  YKWK(M) 6.62
+  Spanish     mean     8.32   EBVS(M) 9.10  ERMS(M) 6.42  MBMPS(F) 9.21  NJS(F) 8.54
+  Chinese     mean     6.60   BWC(M) 5.13  LXC(F) 7.08  NCC(F) 5.22  TXHC(M) 8.96
+  native vs VN        d = -0.48   exact p = 0.543   boot 95% CI [-2.70, +1.35]
+  native vs pooled L2 d = -0.59
+  tonal vs non-tonal  d = -0.95   (7.02 vs 8.31)   exact p = 0.078
+  VN z vs native:     HQTV -0.22  PNV +1.38  THV +0.78  TLV -0.21
+

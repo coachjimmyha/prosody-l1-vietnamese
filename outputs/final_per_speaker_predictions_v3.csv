@@ -1,0 +1,9 @@
+speaker,group,n,mean_pred,ci_low,ci_high
+bdl,Native,181,8.449,8.4301,8.4678
+clb,Native,185,8.3797,8.3612,8.3981
+rms,Native,178,8.4634,8.4391,8.4877
+slt,Native,182,8.3751,8.3556,8.3947
+HQTV,Vietnamese,1026,8.375,8.362,8.3881
+PNV,Vietnamese,1015,8.2956,8.277,8.3142
+THV,Vietnamese,1024,8.3453,8.3333,8.3573
+TLV,Vietnamese,1012,8.244,8.2222,8.2658

@@ -1,0 +1,18 @@
+spk   grp      syll/accent  utts
+----------------------------------
+bdl   native          1.96    24
+slt   native          2.05    24
+clb   native          1.68    24
+rms   native          1.62    24
+HQTV  VN              1.48    24
+PNV   VN              1.49    24
+THV   VN              1.73    24
+TLV   VN              1.55    24
+----------------------------------
+native mean syll/accent = 1.83  (speakers: [np.float64(1.96), np.float64(2.05), np.float64(1.68), np.float64(1.62)])
+VN     mean syll/accent = 1.56  (speakers: [np.float64(1.48), np.float64(1.49), np.float64(1.73), np.float64(1.55)])
+Cohen's d (native vs VN, speaker-level) = +1.56
+bootstrap 95% CI on d = [+0.55, +7.27]  no cross 0
+
+LOWER syll/accent = DENSER accenting. Mixdorff: native 4.47 vs VN 2.62 (VN denser).
+Proxy (F0 peaks prom>=2st), 24 matched utts/spk (set NUTT to change), 4+4 speakers. EXPLORATORY.

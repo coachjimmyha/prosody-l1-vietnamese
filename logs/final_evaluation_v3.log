@@ -1,0 +1,74 @@
+============================================================================
+Final Cross-L1 Evaluation — 14 features (with rhythm)
+============================================================================
+
+[1] Loading Speechocean762 v3 (14 features + target)...
+    2556 utterances, 14 features
+    Train: 1789, Val: 383, Test: 384
+
+============================================================================
+SPEECHOCEAN762 RESULTS (held-out test)
+============================================================================
+  Test PCC:  0.6562   Test RMSE: 1.0255   Test R2: 0.4301
+  Validation PCC: 0.6468   (hyperparameters set a priori; checked here, not tuned)
+
+  Feature importance:
+    speaking_rate             0.508 ##############################
+    varcov                    0.170 ##########
+    percent_v                 0.091 #####
+    silence_proportion        0.057 ###
+    npvi                      0.035 ##
+    mean_f0_ratio             0.033 #
+    std_duration_ratio        0.022 #
+    f0_range_hz               0.021 #
+    mean_intensity_diff       0.019 #
+    mean_duration_ratio       0.016 
+    max_duration_ratio        0.013 
+    std_intensity_diff        0.006 
+    std_f0_ratio              0.004 
+    n_multisyllabic_words     0.003 
+
+[2] Applying model to Native + VN (14 features)...
+    Native: 726 preds / 4 speakers
+    VN:     4077 preds / 4 speakers
+
+============================================================================
+PER-SPEAKER PREDICTIONS (mean +/- 95% CI)
+============================================================================
+
+  Native
+    bdl        n=  181  8.449 [8.430, 8.468]
+    clb        n=  185  8.380 [8.361, 8.398]
+    rms        n=  178  8.463 [8.439, 8.488]
+    slt        n=  182  8.375 [8.356, 8.395]
+
+  Vietnamese
+    HQTV       n= 1026  8.375 [8.362, 8.388]
+    PNV        n= 1015  8.296 [8.277, 8.314]
+    THV        n= 1024  8.345 [8.333, 8.357]
+    TLV        n= 1012  8.244 [8.222, 8.266]
+
+============================================================================
+CROSS-L1 DISCRIMINATION (14-feature model)
+============================================================================
+  Native:      n=726, 8.416 [8.406, 8.427]
+  Vietnamese:  n=4077, 8.315 [8.307, 8.324]
+  Gap:         +0.101
+  p-value:     5.429e-46
+  Cohen's d:   0.456
+
+============================================================================
+DIRECT RHYTHM MEASUREMENTS (native vs VN, independent of ML)
+============================================================================
+  mean_duration_ratio    native=1.360  VN=1.341  d=+0.034  (p=3.81e-01)
+  speaking_rate          native=4.021  VN=3.370  d=+1.058  (p=2.30e-121)
+  npvi                   native=54.753  VN=56.813  d=-0.148  (p=2.31e-04)
+  percent_v              native=41.927  VN=43.369  d=-0.227  (p=1.05e-08)
+  varcov                 native=50.717  VN=51.896  d=-0.087  (p=3.09e-02)
+
+============================================================================
+KEY NUMBERS (14-feature model)
+============================================================================
+  Speechocean762 Test PCC: 0.656
+  Cross-L1 ML Cohen's d:   0.456 (p = 5.43e-46)
+  Files: final_evaluation_results_v3.csv, final_per_speaker_predictions_v3.csv, final_feature_importance_v3_eval.csv

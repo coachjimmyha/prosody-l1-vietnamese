@@ -1,0 +1,17 @@
+native 726 utts (arctic_a0001–arctic_a0200); VN matched 714 utts (HQTV 178, PNV 180, THV 178, TLV 178)
+REAL model (matched): raw gap +0.036 points | utterance d = +0.195 | speaker d = +0.945
+  100/1000
+  200/1000
+  300/1000
+  400/1000
+  500/1000
+  600/1000
+  700/1000
+  800/1000
+  900/1000
+  1000/1000
+========================================================================
+MATCHED CONTENT, N = 1000 fake models, seed 42
+Utterance level: real |d| = 0.195; k = 529; p = 0.529
+Speaker level  : real |d| = 0.945; k = 545; p = 0.545
+Direction native > VN: yes

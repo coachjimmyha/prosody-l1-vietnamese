@@ -1,0 +1,16 @@
+Hyperparameter sensitivity — train 1789, validation 383 (test set not used)
+
+Validation PCC by maximum depth x minimum leaf size (200 trees):
+  depth \ leaf        1       5      10      20
+             4    0.640   0.640   0.638   0.639
+             6    0.651   0.647   0.646   0.648
+             8    0.652   0.647   0.647   0.650
+            12    0.647   0.644   0.647   0.650
+          None    0.651   0.645   0.647   0.650
+
+Validation PCC by number of trees (depth 8, leaf 10): 100: 0.645, 200: 0.647, 500: 0.649
+
+All 60 settings: validation PCC 0.635–0.654
+Best: trees=500, depth=8, leaf=1  PCC=0.654
+Chosen a priori (200, 8, 10): PCC=0.647  (best − chosen = 0.007)
+-> saved outputs/hyperparameter_sensitivity.csv
